@@ -3,45 +3,60 @@ body {
 	padding: 0;
 	font-family: MuseoSansCyrl300 !important;
 }
+
+a {
+	color: #000 !important;
+	outline: none;
+}
 	  /******************/
 	 /* section header */
 	/******************/
-
+	
 	.header {
-		height: 615px;
-		background-color: #06093c;
+		height: 715px;
+		background: url('../img/bg.jpg') no-repeat center;
+		background-size: cover;
 		color: #fff;
-		border-radius: 100% / 10%;
+		border-radius: 90% / 5%;
 		border-top-left-radius: 0%;
 		border-top-right-radius: 0%;
+		border-bottom-right-radius: 1% / 1%;
+		border-bottom-left-radius: 1%/1%;
 		position: relative;
-		margin-bottom: 390px;
+		margin-bottom: 325px;
 	}
 	
+	.share-header {
+		padding-bottom: 20px;
+	}
+
 	.share-wrapper {
 		display: inline-block;
 		float: right;
-		margin-top: 30px;
+		margin-top: 24px;
 		margin-bottom: 30px;
+		padding-right: 40px;
 	}
 	
 	.share {
 		display: inline-block;
-		margin-left: 30px;
+		margin-left: 25px;
+		font-size: 14px;
 	}
 
 	.share:hover {
 		cursor: pointer;
 	}
-
+	
 	.euro-logo > img {
-		width: 80%;
+		width: 87%;
 	}
 
 	.header-tittle {
 		text-transform: uppercase;
 		letter-spacing: 1px;
-		margin-bottom: 45px;
+		margin-bottom: 35px;
+		margin-left: 25px;
 	}
 
 	.bold-tittle {
@@ -56,6 +71,7 @@ body {
 
 	.stage {
 		line-height: 22px;
+		margin-left: 18px;
 	}
 
 	.stage:nth-child(2) {
@@ -67,7 +83,7 @@ body {
 	}
 
 	.stage-date {
-		font-size: 24px;
+		font-size: 22px;
 		font-family: MuseoSansCyrl300;
 	}
 	
@@ -75,13 +91,14 @@ body {
 		display: inline-block;
 		line-height: 35px;
 		border: 1px solid #4b5173;
-		padding: 8px;
-		margin-top: 12px;
+		padding: 12px;
+		margin-left: 25px;
+		
 	}
 
 	.final-text {
 		text-transform: uppercase;
-		font-size: 28px;
+		font-size: 26px;
 	}
 
 	.final-date {
@@ -94,9 +111,9 @@ body {
 	    /**********/
 
 	.slider {
-		width: 1200px;
+		width: 100%;
 		position: absolute; 
-		bottom: -60%;
+		bottom: -45%;
 		left: 50%;
 		transform: translateX(-50%);
 		color: #000;
@@ -107,32 +124,42 @@ body {
 		color: #fff;
 		text-align: left;
 		text-transform: uppercase;
-		padding-left: 8px;
 		padding-bottom: 15px;
 	}
-
-
+	
 	.profile {
 		display: inline-block;
-		border: 1px solid #f4f4f4;
 		height: 460px;
-		margin: 0 10px;
 		text-align: left;
+		margin-right: 30px;
 	}
 
-	.profile-wrapper:nth-child(1) {
-		margin-left: 0;
+	.profile:nth-child(3) {
+		margin-right: 0;
+	}
+
+	.profile:hover {
+		text-decoration: none;
+		color: #000;
 	}
 
 	.photo {
-		background: url('../img/profile-stub.jpg') no-repeat center;
 		width: 288px;
 		height: 288px;
 	}
+
+	.photo > img {
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+	}
 	
 	.profile-descr {
-		margin-top: 70px;
-		margin-left: 30px;
+		padding-top: 70px;
+		padding-left: 30px;
+		padding-bottom: 55px;
+		border: 1px solid #f4f4f4;
+		border-top: none;
 	}
 
 	.home-place {
@@ -147,6 +174,7 @@ body {
 
 	.control {
 		position: absolute;
+		bottom: 35%;
 	}
 
 	.control:hover {
@@ -155,8 +183,7 @@ body {
 	}
 
 	.control-left {
-		left: 0;
-		bottom: 50%;
+		left: 12%;
 		background: url('../img/arrow.png') no-repeat center;
 		background-size: 100%;
 		height: 60px;
@@ -171,8 +198,7 @@ body {
 	}
 
 	.control-right {
-		right: 0;
-		bottom: 50%;
+		right: 12%;
 		background: url('../img/arrow.png') no-repeat center;
 		background-size: 100%;
 		transform: rotate(180deg);
@@ -189,12 +215,13 @@ body {
 	}	
 
 	.open-all-button {
-		display: inline-block;
-		float: left;
+		display: block;
+		float: right;
 		color: #dc1b20;
+		font-size: 13px;
 		font-family: MuseoSansCyrl700;
 		margin-left: 8px;
-		margin-top: 25px;
+		margin-top: 35px;
 	}
 
 	.open-all-button:hover {
@@ -202,14 +229,14 @@ body {
 	}
 
 	.border-line {
-		width: 30px;
+		width: 28px;
 		height: 1px;
 		background-color: #dc1b20;
 		margin-top: 2px;
 	}
 
 	.open-all-button:hover > .border-line {
-		width: 82px;
+		width: 75px;
 		transition: 1s;
 	}
 
@@ -218,17 +245,18 @@ body {
 	 /* ************ */
 
 	.news-section-tittle {
-		font-size: 28px;
+		font-size: 35px;
+		padding-bottom: 20px;
 	}
 
 	.news {
+		display: block;
 		width: 100%;
 		margin-top: 25px;
 	}
 		
 	.news-image {
 		display: inline-block;
-		vertical-align: top;
 		float: left;	
 	}
 
@@ -239,7 +267,7 @@ body {
 
 	.news-content {
 		display: inline-block;
-		width: 61%;
+		width: 56%;
 		height: 220px;
 		padding-top: 15px;
 		padding-left: 40px;
@@ -247,7 +275,7 @@ body {
 		border: 1px solid #f4f4f4;
 		border-left: none;
 		float: left;
-		font-family: MuseoSansCyrl500;
+		font-family: MuseoSansCyrl100;
 	}
 
 	.news-date {
@@ -258,7 +286,7 @@ body {
 	.news-name {
 		text-transform: uppercase;
 		letter-spacing: 0.5px;
-		font-family: MuseoSansCyrl500;
+		font-family: MuseoSansCyrl300;
 	}
 
 	.news-text {
@@ -286,22 +314,41 @@ body {
 
 	.footer {
 		margin-top: 10px;
+		margin-bottom: 30px;
 	}
-	
+
 	.suspilne-logo {
 		display: inline-block;
 		margin-top: 30px;
+		margin-left: 10px;
 	}
 
 	.suspilne-logo:hover {
 		cursor: pointer;
 	}
 
-	.share-footer {
-		display: inline-block;
-		vertical-align: top;
+
+	   /***************** */
+	  /* aquarel section */
+	 /* *************** */
+	
+	.aquarel {
+		position: relative;
 	}
 
+	.decoration {
+		position: absolute;
+		bottom: -30%;
+		right: -48%;
+		transform: rotate(180deg);
+		z-index: -1;
+	}
+
+	.decoration > img {
+		width: 50%;
+	}
+
+	
 
 
 
