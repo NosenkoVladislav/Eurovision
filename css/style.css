@@ -2,6 +2,7 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: MuseoSansCyrl300 !important;
+	overflow-x: hidden;
 }
 
 a {
@@ -244,6 +245,10 @@ a {
 	  /* news section */
 	 /* ************ */
 
+	.news-section {
+		overflow: hidden;
+	}
+	
 	.news-section-tittle {
 		font-size: 35px;
 		padding-bottom: 20px;
@@ -337,10 +342,10 @@ a {
 	}
 
 	.decoration {
+		width: 100%;
 		position: absolute;
-		bottom: -30%;
-		right: -48%;
-		transform: rotate(180deg);
+		right: -78%;
+		bottom: 0;
 		z-index: -1;
 	}
 
