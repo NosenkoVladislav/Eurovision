@@ -409,7 +409,8 @@ a {
 		}
 
 		.news-image > img {
-			width: 336px;
+			width: 100%;
+			object-fit: cover;
 		}
 
 		.news-image, .news-content {
