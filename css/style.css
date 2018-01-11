@@ -2,13 +2,16 @@ body {
 	margin: 0;
 	padding: 0;
 	font-family: MuseoSansCyrl300 !important;
-	overflow-x: hidden;
+	background: url('../img/aquarel_bg_rounded.jpg') no-repeat;
+	background-size: 70%;
+	background-position: 268% 100%;
 }
 
 a {
 	color: #000 !important;
-	outline: none;
+	outline: none !important;
 }
+
 	  /******************/
 	 /* section header */
 	/******************/
@@ -24,7 +27,7 @@ a {
 		border-bottom-right-radius: 1% / 1%;
 		border-bottom-left-radius: 1%/1%;
 		position: relative;
-		margin-bottom: 325px;
+		margin-bottom: 340px;
 	}
 	
 	.share-header {
@@ -75,8 +78,8 @@ a {
 		margin-left: 18px;
 	}
 
-	.stage:nth-child(2) {
-		margin-top: 15px;
+	.second-stage {
+		margin-top: 12px;
 	}
 
 	.stage-text {
@@ -94,7 +97,6 @@ a {
 		border: 1px solid #4b5173;
 		padding: 12px;
 		margin-left: 25px;
-		
 	}
 
 	.final-text {
@@ -107,25 +109,64 @@ a {
 		font-family: MuseoSansCyrl700;
 	}
 
+	@media (max-width: 768px) {
+		.header {
+			text-align: center;
+			height: 660px;
+			margin-bottom: 420px;
+			border-radius: 0;
+		}
+		
+		.share-wrapper {
+			margin-bottom: 5px;
+			padding-right: 0;
+			float: none;
+		}
+
+		.euro-logo > img {
+			width: 50%;
+		}
+
+		.euro-logo {
+			margin-bottom: 60px;
+		}
+		
+		.header-tittle {
+			margin-left: 0;
+		}
+
+		.bold-tittle {
+			font-size: 22px;
+			letter-spacing: 1.5px;
+		}
+
+		.stage {
+			margin: 0;
+		}
+
+		.final-stage {
+			border: none;
+			margin: 0;
+		}
+	}
+
 	      /**********/
 	     /* slider */
 	    /**********/
 
 	.slider {
-		width: 100%;
-		position: absolute; 
-		bottom: -45%;
+		width: 940px;
+		position: relative; 
+		bottom: -24%;
 		left: 50%;
 		transform: translateX(-50%);
-		color: #000;
-		text-align: center;
+		margin-left: 10px;
 	}
 
 	.slider-tittle {
-		color: #fff;
-		text-align: left;
 		text-transform: uppercase;
 		padding-bottom: 15px;
+		margin-left: -10px;
 	}
 	
 	.profile {
@@ -136,7 +177,8 @@ a {
 	}
 
 	.profile-wrapper {
-		width: inherit;
+		position: absolute;
+		width: 100%;
 	}
 
 	.profile:hover {
@@ -157,10 +199,12 @@ a {
 	
 	.profile-descr {
 		padding-top: 70px;
+		padding-left: 30px;
 		width: 288px;
 		padding-bottom: 55px;
 		border: 1px solid #f4f4f4;
 		border-top: none;
+		text-align: left;
 	}
 
 	.home-place {
@@ -174,9 +218,9 @@ a {
 	}
 
 	.control {
-		position: absolute;
-		width: 940px;
-		bottom: 46%;
+		position: relative;
+		width: inherit;
+		bottom: -250px;
 	}
 
 	.control > div:hover {
@@ -193,19 +237,19 @@ a {
 		width: 30px;
 	}
 
-	.control-left:hover {
-		background: url('../img/arrow-red.png') no-repeat center;
-		background-size: 100%;
-		height: 60px;
-		width: 30px;
-	}
-
 	.control-right {
 		position: absolute;
 		right: -10%;
 		background: url('../img/arrow.png') no-repeat center;
 		background-size: 100%;
 		transform: rotate(180deg);
+		height: 60px;
+		width: 30px;
+	}
+
+	.control-left:hover {
+		background: url('../img/arrow-red.png') no-repeat center;
+		background-size: 100%;
 		height: 60px;
 		width: 30px;
 	}
@@ -224,8 +268,7 @@ a {
 		color: #dc1b20;
 		font-size: 13px;
 		font-family: MuseoSansCyrl700;
-		margin-left: 8px;
-		margin-top: 35px;
+		margin-top: 30px;
 	}
 
 	.open-all-button:hover {
@@ -244,17 +287,60 @@ a {
 		transition: 1s;
 	}
 
+	@media (max-width: 768px) {
+		.slider {
+			width: 100%;
+			bottom: -5%;
+			margin-left: 0;
+		}
+
+		.slider-tittle {
+			text-align: left;
+			font-size: 30px;
+			margin-left: 0;
+		}
+
+		.control {
+			display: none;
+		}
+		
+		.profile-wrapper {
+			padding-left: 10px;
+			overflow-x: hidden;
+		}
+
+		.profile {
+			margin: 0 10px;
+		}
+
+		.photo {
+			width: 262px;
+			height: 262px;
+		}
+
+		.profile-descr {
+			width: 262px;
+		}
+
+		.open-all-button {
+			float: none;
+			text-align: left;
+			margin-top: 0;
+			font-size: 14px;
+		}
+
+		.border-line {
+			width: 42px;
+			margin-top: 8px; 
+		}
+	}
+
 	   /* ************ */
 	  /* news section */
 	 /* ************ */
 
-	.news-section {
-		overflow: hidden;
-	}
-	
 	.news-section-tittle {
 		font-size: 35px;
-		padding-bottom: 20px;
 	}
 
 	.news {
@@ -315,6 +401,31 @@ a {
 		cursor: pointer;
 	}
 
+	@media (max-width: 768px) {
+		.news {
+			width: 95%;
+			margin: 0 auto;
+			margin-top: 25px;
+		}
+
+		.news-image > img {
+			width: 336px;
+		}
+
+		.news-image, .news-content {
+			width: 100%;
+			float: none;
+		}
+
+		.news-content {
+			border-top: none;
+			border-left: 1px solid #f4f4f4;
+			height: auto;
+			padding: 20px;
+			padding-bottom: 40px;
+		}
+	}
+
 
 	   /**************** */
 	  /* footer section */
@@ -328,35 +439,18 @@ a {
 	.suspilne-logo {
 		display: inline-block;
 		margin-top: 30px;
-		margin-left: 10px;
 	}
 
 	.suspilne-logo:hover {
 		cursor: pointer;
 	}
 
-
-	   /***************** */
-	  /* aquarel section */
-	 /* *************** */
-	
-	.aquarel {
-		position: relative;
+	@media (max-width: 768px) {
+		.footer {
+			text-align: center;
+		}
 	}
 
-	.decoration {
-		width: 100%;
-		position: absolute;
-		right: -78%;
-		bottom: 0;
-		z-index: -1;
-	}
-
-	.decoration > img {
-		width: 50%;
-	}
-
-	
 
 
 
