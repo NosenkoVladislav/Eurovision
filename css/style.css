@@ -335,6 +335,16 @@ a {
 		}
 	}
 
+	@media (max-width: 480px) {
+		.open-all-button {
+			font-size: 12px;
+		}
+
+		.border-line {
+			width: 30px;
+		}
+	}
+
 	   /* ************ */
 	  /* news section */
 	 /* ************ */
@@ -426,6 +436,7 @@ a {
 			padding-bottom: 40px;
 		}
 	}
+
 
 
 	   /**************** */
