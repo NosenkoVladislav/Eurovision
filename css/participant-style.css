@@ -1,0 +1,305 @@
+body {
+	margin: 0;
+	padding: 0;
+	font-family: MuseoSansCyrl300 !important;
+	background: url('../img/aquarel_bg_rounded.jpg') no-repeat;
+	background-size: 70%;
+	background-position: 268% 100%;
+}
+
+a {
+	color: #000 !important;
+	outline: none !important;
+}
+	
+	  /* ******************* */
+	 /* open header section */
+	/* ******************* */
+
+	.open-header {
+		background: url('../img/bg@3x.jpg') no-repeat top;
+		background-size: cover;
+		height: 360px;
+		border-radius: 90% / 5%;
+		border-top-left-radius: 0%;
+		border-top-right-radius: 0%;
+		border-bottom-right-radius: 1% / 1%;
+		border-bottom-left-radius: 1%/1%;
+		color: #fff;
+	}
+	
+	.navbar {
+		margin-top: 15px;
+		padding-left: 20px;
+	}
+
+	.navbar-logo {
+		display: inline-block;
+		width: 17.2%;
+		vertical-align: top;
+	}
+
+	.navbar-logo > img {
+		width: 100%;
+	}
+
+	.navbar-item {
+		display: inline-block;
+		margin: 20px;
+		margin-top: 10px;
+	}
+
+	.navbar-item:nth-child(2) {
+		margin-left: 130px;
+	}
+	
+	.sm-date {
+		font-size: 10px;
+		letter-spacing: 0.5px;
+		font-family: MuseoSansCyrl100;
+		color: #6e6f8e;
+	}
+
+	.lg-date {
+		font-size: 14px;
+	}
+
+	.final-date {
+		color: #cbcbd6;
+	}
+
+	.share-wrapper {
+		display: inline-block;
+		float: right;
+		margin-top: 10px;
+	}
+	
+	.share {
+		display: inline-block;
+		margin-left: 25px;
+		font-size: 14px;
+	}
+
+	.share:hover {
+		cursor: pointer;
+	}
+
+	@media (max-width: 768px) {
+		.open-header {
+			height: auto;
+			text-align: center;
+			border-radius: 0;
+			background-color: #04073c;
+		}
+		
+		.share-wrapper {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			padding-right: 0;
+			float: none;
+		}
+
+		.share {
+			margin: 0 20px;
+		}
+
+		.euro-logo > img {
+			width: 70%;
+		}
+	}
+	
+	/* participant-profile */
+	
+	.participant {
+		position: relative;
+		color: #fff;
+		margin-top: 30px;
+	}
+
+	.participant-photo {
+		display: inline-block;
+	}
+
+	.participant-photo > img {
+		width: 288px;
+		height: 288px;
+		object-fit: cover;
+	}
+
+	.participant-info {
+		display: inline-block;
+		vertical-align: top;
+		margin-left: 30px;
+	}
+
+	.location, .participant-name {
+		text-transform: uppercase;
+		letter-spacing: 1px;
+	}
+
+	.location {
+		font-size: 26px;
+	}
+
+	.participant-name {
+		font-size: 34px;
+		font-family: MuseoSansCyrl700;
+		margin-top: 5px;
+	}
+
+	.song-name {
+		font-size: 24px;
+	}
+	
+	.regional-logo {
+		display: inline-block;
+		width: 80px;
+		margin-top: 20px;
+	}
+
+	.regional-logo > img {
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.participant {
+			text-align: left;
+			margin-bottom: -40px;
+		}
+
+		.participant-photo {
+			display: block;
+			position:relative;
+    		overflow:hidden;
+    		padding-bottom:100%;
+		}
+
+		.participant-photo > img {
+			position: absolute;
+			width: auto;
+			height: auto;
+			transform: translate(-50%, -50%);
+			left: 50%;
+			top: 50%;
+			
+		}
+
+		.participant-info {
+			display: block;
+			margin-top: 15px;
+			margin-left: 0;
+		}
+
+	}
+
+
+	/* iframe */
+
+	.video-wrapper {
+		position:relative;
+		padding-bottom:56.25%;
+		padding-top:30px;
+		height:0;
+		overflow:hidden;
+	}
+
+	.video-wrapper iframe, .video-container object, .video-container embed {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;
+	}
+	
+
+	.participant-tittle {
+		margin-top: 50px;
+		margin-bottom: 30px;
+		font-size: 24px;
+		font-family: MuseoSansCyrl100;
+	}
+
+	.sidebar {
+		margin-left: 10px;
+	}
+
+	.song-description {
+		margin-top: 10px;
+	}
+
+	.bold-side-title {
+		font-family: MuseoSansCyrl700;
+		font-size: 14px;
+	}
+
+	.light-side-title {
+		font-size: 18px;
+	}
+
+	.get-song-btn {
+		width: 95%;
+		color: red;
+		font-size: 16px;
+		text-align: center;
+		border: 1px solid red;
+		border-radius: 5px;
+		padding: 10px 0;
+		margin: 25px 0 ;
+	}
+
+	.get-song-btn:hover {
+		cursor: pointer;
+	}
+
+	.participant-link {
+		color: red !important;
+		text-decoration: underline;
+		font-size: 12px;
+		padding-top: 5px;
+	}
+
+	.sidebar-share {
+		margin-top: 15px;
+		color: red;
+		float: none;
+		width: 100%;
+	}
+
+	@media (max-width: 768px) {
+		.get-song-btn {
+			width: 65%;
+			padding: 12px 0;
+		}
+
+
+
+	}
+
+	  /* ******************* */
+	 /* open footer section */
+	/* ******************* */
+
+
+	.open-footer {
+		margin-top: 50px;
+		margin-bottom: 50px;
+	}
+
+	.suspilne-logo {
+		display: inline-block;
+	}
+
+	.suspilne-logo:hover {
+		cursor: pointer;
+	}
+
+	@media (max-width: 768px) {
+		.open-footer {
+			text-align: center;
+			margin-top: 40px;
+		}
+
+		.share-footer {
+			margin-top: 24px;
+		}
+	}

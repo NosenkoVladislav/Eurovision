@@ -56,19 +56,19 @@ a {
 		width: 87%;
 	}
 
-	.header-tittle {
+	.header-title {
 		text-transform: uppercase;
 		letter-spacing: 1px;
 		margin-bottom: 35px;
 		margin-left: 25px;
 	}
 
-	.bold-tittle {
+	.bold-title {
 		font-family: MuseoSansCyrl700;
 		font-size: 36px;
 	}
 
-	.light-tittle {
+	.light-title {
 		font-family: MuseoSansCyrl300;
 		font-size: 24px;
 	}
@@ -127,15 +127,15 @@ a {
 			width: 50%;
 		}
 
-		.euro-logo {
+		.euro-logo-wrapper {
 			margin-bottom: 60px;
 		}
 		
-		.header-tittle {
+		.header-title {
 			margin-left: 0;
 		}
 
-		.bold-tittle {
+		.bold-title {
 			font-size: 22px;
 			letter-spacing: 1.5px;
 		}
@@ -163,7 +163,7 @@ a {
 		margin-left: 10px;
 	}
 
-	.slider-tittle {
+	.slider-title {
 		text-transform: uppercase;
 		padding-bottom: 15px;
 		margin-left: -10px;
@@ -294,7 +294,7 @@ a {
 			margin-left: 0;
 		}
 
-		.slider-tittle {
+		.slider-title {
 			text-align: left;
 			font-size: 30px;
 			margin-left: 0;
@@ -349,7 +349,7 @@ a {
 	  /* news section */
 	 /* ************ */
 
-	.news-section-tittle {
+	.news-section-title {
 		font-size: 35px;
 	}
 
